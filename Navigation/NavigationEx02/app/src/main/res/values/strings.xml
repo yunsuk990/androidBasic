@@ -1,5 +1,15 @@
 <resources>
-    <string name="app_name">NavigationEx02</string>
+    <string name="app_name">NavigaionEx02</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="fragment_home_tv_title">메인화면</string>
+    <string name="fragment_home_btn_signin">로그인하기</string>
+    <string name="fragment_home_btn_signup">회원가입하기</string>
+    <string name="fragment_signin_edit_username_hint">아이디</string>
+    <string name="fragment_signin_edit_email_hint">비밀번호</string>
+    <string name="fragment_signup_edit_username_hint">아이디</string>
+    <string name="fragment_signup_edit_email_hint">비밀번호</string>
+    <string name="fragment_signup_btn_signup">회원가입</string>
+    <string name="fragment_signin_btn_signin">로그인</string>
 </resources>

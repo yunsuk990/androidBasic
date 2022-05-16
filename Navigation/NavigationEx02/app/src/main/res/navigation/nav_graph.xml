@@ -7,27 +7,46 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.navigationex02.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="com.example.navigationex02.ui.HomeFragment"
+        android:label="메인화면"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_signinFragment"
+            app:destination="@id/signinFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signupFragment"
-        android:name="com.example.navigationex02.SignupFragment"
-        android:label="fragment_signup"
-        tools:layout="@layout/fragment_signup" />
+        android:name="com.example.navigationex02.ui.SignupFragment"
+        android:label="회원가입"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_to_signinFragment"
+            app:destination="@id/signinFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signinFragment"
-        android:name="com.example.navigationex02.SigninFragment"
-        android:label="fragment_signin"
-        tools:layout="@layout/fragment_signin" />
+        android:name="com.example.navigationex02.ui.SigninFragment"
+        android:label="로그인"
+        tools:layout="@layout/fragment_signin" >
+        <action
+            android:id="@+id/action_signinFragment_to_friendsFragment"
+            app:destination="@id/friendsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/friendsFragment"
-        android:name="com.example.navigationex02.FriendsFragment"
-        android:label="fragment_friends"
-        tools:layout="@layout/fragment_friends" />
+        android:name="com.example.navigationex02.ui.FriendsFragment"
+        android:label="친구목록"
+        tools:layout="@layout/fragment_friends" >
+        <action
+            android:id="@+id/action_friendsFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.navigationex02.DetailFragment"
-        android:label="fragment_detail"
+        android:name="com.example.navigationex02.ui.DetailFragment"
+        android:label="친구정보"
         tools:layout="@layout/fragment_detail" />
 </navigation>

@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/android/androidBasic/Project/FreshlAuctionApp/app/src/main/res/drawable/bg_border_rounded.xml" value="0.164" />
+        <entry key="..\:/Users/android/androidBasic/Project/FreshlAuctionApp/app/src/main/res/drawable/ic_delete_35dp.xml" value="0.164" />
+        <entry key="..\:/Users/android/androidBasic/Project/FreshlAuctionApp/app/src/main/res/drawable/ic_person.xml" value="0.164" />
         <entry key="..\:/Users/android/androidBasic/Project/FreshlAuctionApp/app/src/main/res/layout/activity_main.xml" value="0.259375" />
       </map>
     </option>

@@ -19,7 +19,11 @@
         android:id="@+id/loginFragment"
         android:name="com.example.freshlauctionapp.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.example.freshlauctionapp.RegisterFragment"
@@ -29,15 +33,46 @@
         android:id="@+id/searchFragment"
         android:name="com.example.freshlauctionapp.SearchFragment"
         android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_saveFragment"
+            app:destination="@id/saveFragment" />
+    </fragment>
     <fragment
         android:id="@+id/resultFragment"
         android:name="com.example.freshlauctionapp.ResultFragment"
         android:label="fragment_result"
-        tools:layout="@layout/fragment_result" />
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="RESULT_AMOUNT"
+            app:argType="string" />
+        <argument
+            android:name="RESULT_DATE"
+            app:argType="string" />
+        <argument
+            android:name="RESULT_FRUIT"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/saveFragment"
         android:name="com.example.freshlauctionapp.SaveFragment"
         android:label="fragment_save"
-        tools:layout="@layout/fragment_save" />
+        tools:layout="@layout/fragment_save" >
+        <argument
+            android:name="SAVE_ID"
+            app:argType="long" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_loginFragment"
+        app:destination="@id/loginFragment"
+        app:popUpTo="@id/loginFragment"
+        app:popUpToInclusive="true" />
+    <action
+        android:id="@+id/action_global_searchFragment"
+        app:destination="@id/searchFragment"
+        app:popUpTo="@id/searchFragment"
+        app:popUpToInclusive="true" />
 </navigation>

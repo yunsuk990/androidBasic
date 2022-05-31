@@ -14,11 +14,11 @@ import kotlin.reflect.KProperty
 class MainActivity : AppCompatActivity() {
 
     private val loginDao by lazy {
-        LoginDatabase.getDatabase(this).logindao()
+        LoginDatabase.getDatabase().logindao()
     }
 
     private val binding by lazy {
-        ActivityMainBinding.inflate(layoutInflater) 
+        ActivityMainBinding.inflate(layoutInflater)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

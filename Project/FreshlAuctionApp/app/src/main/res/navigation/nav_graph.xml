@@ -7,18 +7,18 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.example.freshlauctionapp.SplashFragment"
-        android:label="fragment_splash"
+        android:name="com.example.freshlauctionapp.login.SplashFragment"
+        android:label="Splash"
         tools:layout="@layout/fragment_splash" />
     <fragment
         android:id="@+id/userFragment"
-        android:name="com.example.freshlauctionapp.UserFragment"
-        android:label="fragment_user"
+        android:name="com.example.freshlauctionapp.user.UserFragment"
+        android:label="내 정보"
         tools:layout="@layout/fragment_user" />
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.freshlauctionapp.LoginFragment"
-        android:label="fragment_login"
+        android:name="com.example.freshlauctionapp.login.LoginFragment"
+        android:label="로그인"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
@@ -26,13 +26,13 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.example.freshlauctionapp.RegisterFragment"
-        android:label="fragment_register"
+        android:name="com.example.freshlauctionapp.login.RegisterFragment"
+        android:label="회원가입"
         tools:layout="@layout/fragment_register" />
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.example.freshlauctionapp.SearchFragment"
-        android:label="fragment_search"
+        android:name="com.example.freshlauctionapp.search.SearchFragment"
+        android:label="가격검색"
         tools:layout="@layout/fragment_search" >
         <action
             android:id="@+id/action_searchFragment_to_resultFragment"
@@ -43,8 +43,8 @@
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
-        android:name="com.example.freshlauctionapp.ResultFragment"
-        android:label="fragment_result"
+        android:name="com.example.freshlauctionapp.result.ResultFragment"
+        android:label="검색결과"
         tools:layout="@layout/fragment_result" >
         <argument
             android:name="RESULT_AMOUNT"
@@ -58,8 +58,8 @@
     </fragment>
     <fragment
         android:id="@+id/saveFragment"
-        android:name="com.example.freshlauctionapp.SaveFragment"
-        android:label="fragment_save"
+        android:name="com.example.freshlauctionapp.local.SaveFragment"
+        android:label="저장된 내역"
         tools:layout="@layout/fragment_save" >
         <argument
             android:name="SAVE_ID"
